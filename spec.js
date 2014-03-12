@@ -18,6 +18,10 @@ describe('gives a array of ranges that are summing', function() {
   it("returns [[1,6]] for 1d6", function() {
     expect(dicesRanges('1d6')).toEqual([[1,6]]);
   });
+
+  it("returns [[1,6], [1, 6]] for 1d6", function() {
+    expect(dicesRanges('1d6 + 1d6')).toEqual([[1,6], [1, 6]]);
+  });
 })
 
 
