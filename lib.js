@@ -8,6 +8,11 @@ function diceRange(dice) {
           .map(parseDecimals);
 }
 
+function dicesRanges(dices) {
+  return [diceRange(dices)];
+}
+
 function dicesRange(dices) {
   return diceRange(dices);
 }
+
