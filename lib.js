@@ -9,9 +9,7 @@ function diceRange(dice) {
 }
 
 function dicesRanges(dices) {
-  return dices.split("+").map(function(elem) {
-    return diceRange(elem);
-  });
+  return dices.split("+").map(diceRange);
 }
 
 function dicesRange(dices) {
