@@ -2,6 +2,12 @@ function parseDecimals(elem) {
   return parseInt(elem, 10);
 }
 
-function generate(dice) {
-  return dice.split('d').map(parseDecimals);
+function diceRange(dice) {
+  return dice
+          .split('d')
+          .map(parseDecimals);
+}
+
+function dicesRange(dices) {
+  return diceRange(dices);
 }
