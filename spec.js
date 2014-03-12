@@ -1,10 +1,12 @@
-describe('something', function () {
+
+describe('range generation', function () {
+
   beforeEach(function () {
-    
+
   });
 
-  it('should...', function () {
-    expect(true).toEqual(false);
+  it('gives the range within min and max values', function () {
+    expect(generate('1d6')).toEqual([1,6]);
   });
 });
 
