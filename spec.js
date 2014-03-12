@@ -9,7 +9,7 @@ describe('range generation', function () {
     expect(dicesRange('1d10')).toEqual([1,10]);
   });
 
-  xit('gives [2,12] for two dices 1d6 + 1d6', function () {
+  it('gives [2,12] for two dices 1d6 + 1d6', function () {
     expect(dicesRange('1d6 + 1d6')).toEqual([2,12]);
   });
 });

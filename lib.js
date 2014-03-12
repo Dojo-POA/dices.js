@@ -13,6 +13,8 @@ function dicesRanges(dices) {
 }
 
 function dicesRange(dices) {
-  return diceRange(dices);
+  return dicesRanges(dices).reduce(function(previous, current) {
+    return [current[0] + previous[0], current[1] + previous[1]]
+  });
 }
 
