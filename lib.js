@@ -16,6 +16,6 @@ function dicesRange(dices) {
   return dicesRanges(dices).reduce(sumRanges);
 }
 
-function sumRanges(previous, current) {
-  return [current[0] + previous[0], current[1] + previous[1]];
+function sumRanges(x, y) {
+  return [y[0] + x[0], y[1] + x[1]];
 }
