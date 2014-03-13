@@ -1,11 +1,6 @@
-function parseDecimals(elem) {
-  return parseInt(elem, 10);
-}
-
 function diceRange(dice) {
-  return dice
-          .split('d')
-          .map(parseDecimals);
+  d = dice.split('d');
+  return [+d[0], d[1]*d[0]];
 }
 
 function dicesRanges(dices) {

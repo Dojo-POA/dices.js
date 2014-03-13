@@ -16,6 +16,10 @@ describe('range generation', function () {
   it('gives [2,12] for two dices 1d6 + 1d6', function () {
     expect(dicesRange('1d6 + 1d6 + 1d10')).toEqual([3,22]);
   });
+
+  it('gives [2,12] for two dices 2d6', function () {
+    expect(dicesRange('2d6')).toEqual([2,12]);
+  });
 });
 
 describe('gives a array of ranges that are summing', function() {
