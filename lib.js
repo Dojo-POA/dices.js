@@ -1,5 +1,5 @@
 function diceRange(dice) {
-  d = dice.split('d');
+  var d = dice.split('d');
   return [+d[0], d[1]*d[0]];
 }
 
